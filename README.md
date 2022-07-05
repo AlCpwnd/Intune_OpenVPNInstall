@@ -38,9 +38,9 @@ ___
 3. Using *Select app package file* point to the **OpenVPNInstall.intunewin** within your "Output" folder.
 4. Complete the necessary information and click Next.
 5. Within the *Program* tab complete the following :
-    - Install command : `powershell.exe -executionpolicy bypass -file OpenVPNInstall.ps1 Scabel.ovpn`
+    - Install command : `powershell.exe -executionpolicy bypass -file OpenVPNInstall.ps1 ConfigFile1.ovpn`
     - Uninstall command : `msiexec /x "{C57B257B-3D92-4AC0-8FE8-7D6FF81AEF73}" /q`
-        - This is the GUID for the OpenVPN-2.5.7-I602-amd64.msi . Your GUID may need to be adapted depending on your installer and version. To recover the GUID of installed files you can use the following command : `get-wmiobject Win32_Product | Sort-Object -Property Name |Format-Table IdentifyingNumber, Name, LocalPackage -AutoSize`
+        - This is the GUID for the *OpenVPN-2.5.7-I602-amd64.msi*. Your GUID may need to be adapted depending on your installer and version. To recover the GUID of installed files you can use the following command : `get-wmiobject Win32_Product | Sort-Object -Property Name |Format-Table IdentifyingNumber, Name, LocalPackage -AutoSize`
 6. Within the *Requirements* tab, complete the "Operating system architecture" and "Minimum operating system."
 7. Within the *Detection rules* tab do the following :
     - Rules format : Manually configure detection rules
