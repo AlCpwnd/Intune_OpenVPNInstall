@@ -1,4 +1,4 @@
-# OpenVPNInstall
+# Intune_OpenVPNInstall
 Script allowing the installation of the OpenVPN client and copies the configuration files into the required folders.
 This is meant for deployment through Intune and assumes that everyone can use the same OVPN configuration file. [Package Preperation](#package-preperation) and [Creating the app](#creating-the-app) will go over how to generate the package and setup the application within the tenant, repsectively. 
 
